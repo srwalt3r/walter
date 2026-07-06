@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link-bio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    
+
+
+
+
+    <button id="shareBtn" class="share-btn" >
+        <i class="fa-solid fa-share-nodes"></i>
+    </button>
+
+    <Div>
+        <div class="perfil-container">
+                <div class="orbit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+            <img  src="walter.png" alt="perfil">
+            <img src="download (6).png" class="decoracao">
+            <div class="online"></div>
+        </div>
+    </Div>
+    <h1>SrWalt3R</h1>    
+
+    <div class="socials">
+        <a href="https://www.tiktok.com/@srwalt3r" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-tiktok"></i>
+        </a>
+
+        <a href="https://livepix.gg/uvinha" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-pix"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@SrWalt3R" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i>
+        </a>
+
+        <a href="https://www.instagram.com/aquelewalter/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <div class="links">
+        
+        
+        
+        <a href="" class="btn-link">
+            <div class="icon">
+                <img src="https://cdn.beacons.ai/user_content/iDPRJvggSdTLocHGAzHfrw2JaDb2/referenced_images/0c535a75-f5a6-4d53-8e0c-a087d83caf67__link-in-bio__links-block__home__b1b8d32c-a425-49df-8f5f-a6f4d178ea81__36697f30-6ef9-44b5-aeef-47f946d96e71__14175ccb-bb05-47bf-b79f-53d0b8367e26.webp?t=1755103997710">
+            </div>
+            <span>Grupo de Promoção Whatsapp</span>
+        </a>
+        
+
+
+
+
+
+
+
+                <!-- ======= TOPO DA LOJA ======= -->
+        <div class="shop-header">
+            <div class="search-container">
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24">
+                        <path d="M21 21L15.8 15.8M17 10.5A6.5 6.5 0 1 1 4 10.5A6.5 6.5 0 0 1 17 10.5Z"/>
+                    </svg>
+                    <input
+                        id="searchInput"
+                        type="text"
+                        placeholder="Pesquisar produtos..."
+                        autocomplete="off">
+                </div>
+            </div>
+            <div class="shop-icons">
+                <button id="favoriteBtn" class="shop-btn">
+                    <i class="fa-solid fa-heart"></i>
+                    <span id="favoriteCount" class="badge">0</span>
+                </button>
+                <button id="cartBtn" class="shop-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cartCount" class="badge">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ========= PAINEL FAVORITOS ========= -->
+
+        <div id="favoritePanel" class="side-panel">
+            <div class="panel-header">
+                <h2>❤️ Favoritos</h2>
+                <button class="close-panel">&times;</button>
+            </div>
+            <div id="favoriteItems" class="panel-items">
+            </div>
+        </div>
+
+        <!-- ========= PAINEL CARRINHO ========= -->
+
+        <div id="cartPanel" class="side-panel">
+            <div class="panel-header">
+                <h2>🛒 Carrinho</h2>
+                <button class="close-panel">&times;</button>
+            </div>
+            <div id="cartItems" class="panel-items">
+            </div>
+            <div class="cart-footer">
+                <h3>Total:</h3>
+                <span id="cartTotal">R$ 0,00</span>
+                <button class="checkout-btn">
+                    Finalizar Compra
+                </button>
+            </div>
+        </div>
+        <!-- Fundo escuro -->
+        <div id="overlay"></div>
+        
+        <div class="tilt">
+            <a href="#" class="btn-link produto" data-id="1" data-preco="249.90">
+                <div class="icon">
+                    <img src="product-4.png">
+                </div>
+                <span>Combo Gamer Meetion</span>
+                <div class="product-actions">
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="cart-add-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+            </a>
+        </div>
+
+        <div class="tilt">
+            <a href="#" class="btn-link produto" data-id="2" data-preco="899.90">
+                <div class="icon">
+                    <img src="product-5.png">
+                </div>
+                <span>Msi GeForce Gtx 1650</span>
+                <div class="product-actions">
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="cart-add-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+            </a>
+        </div>
+
+        <div class="tilt">
+            <a href="#" class="btn-link produto" data-id="3" data-preco="899.90">
+                <div class="icon">
+                    <img src="product-6.png">
+                </div>
+                <span>Dualsense PS5</span>
+                <div class="product-actions">
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="cart-add-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+            </a>
+        </div>
+
+        <div class="tilt">
+            <a href="#" class="btn-link produto" data-id="4" data-preco="899.90">
+                <div class="icon">
+                    <img src="product-7.png">
+                </div>
+                <span>Cadeira Gamer Frizzi</span>
+                <div class="product-actions">
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="cart-add-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+            </a>
+        </div>
+
+        <div class="tilt">
+            <a href="#" class="btn-link produto" data-id="5" data-preco="899.90">
+                <div class="icon">
+                    <img src="product-8.png">
+                </div>
+                <span>IPhone 14 Pro Max 512GB</span>
+                <div class="product-actions">
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="cart-add-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+            </a>
+        </div>
+
+        <div class="tilt">
+            <a href="#" class="btn-link produto" data-id="6" data-preco="899.90">
+                <div class="icon">
+                    <img src="product-9.png">
+                </div>
+                <span>Samsung Galaxy S23 Ultra</span>
+                <div class="product-actions">
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="cart-add-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        //==============================
+    // COMPARTILHAR
+    //==============================
+
+    const shareBtn = document.getElementById("shareBtn");
+
+    shareBtn?.addEventListener("click", async () => {
+
+        if (navigator.share) {
+
+            await navigator.share({
+                title: document.title,
+                text: "Confira meu site!",
+                url: window.location.href
+            });
+
+        } else {
+
+            navigator.clipboard.writeText(window.location.href);
+            alert("Link copiado!");
+
+        }
+
+    });
+
+
+    //==============================
+    // PRODUTOS
+    //==============================
+
+    const produtos = document.querySelectorAll(".produto");
+
+    const favoriteBtn = document.getElementById("favoriteBtn");
+    const cartBtn = document.getElementById("cartBtn");
+
+    const favoritePanel = document.getElementById("favoritePanel");
+    const cartPanel = document.getElementById("cartPanel");
+
+    const favoriteItems = document.getElementById("favoriteItems");
+    const cartItems = document.getElementById("cartItems");
+
+    const favoriteCount = document.getElementById("favoriteCount");
+    const cartCount = document.getElementById("cartCount");
+
+    const cartTotal = document.getElementById("cartTotal");
+
+    const overlay = document.getElementById("overlay");
+
+
+    //==============================
+    // LOCAL STORAGE
+    //==============================
+
+    let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+
+    //==============================
+    // SALVAR
+    //==============================
+
+    function salvar(){
+
+        localStorage.setItem("favoritos", JSON.stringify(favoritos));
+
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+    }
+
+
+    //==============================
+    // CONTADORES
+    //==============================
+
+    function atualizarContadores(){
+
+        favoriteCount.textContent = favoritos.length;
+
+        cartCount.textContent = carrinho.length;
+
+    }
+
+
+    //==============================
+    // FAVORITOS
+    //==============================
+
+    function renderFavoritos(){
+
+        favoriteItems.innerHTML = "";
+
+        favoritos.forEach(item=>{
+
+            favoriteItems.innerHTML += `
+
+            <div class="panel-product">
+
+                <img src="${item.imagem}">
+
+                <div>
+
+                    <h4>${item.nome}</h4>
+
+                    <p>${item.preco}</p>
+
+                </div>
+
+                <button class="remove-item"
+                onclick="removerFavorito('${item.id}')">
+
+                ✖
+
+                </button>
+
+            </div>
+
+            `;
+
+        });
+
+    }
+
+
+    //==============================
+    // CARRINHO
+    //==============================
+
+    function renderCarrinho(){
+
+        cartItems.innerHTML="";
+
+        let total=0;
+
+        carrinho.forEach(item=>{
+
+            total+=Number(item.valor);
+
+            cartItems.innerHTML+=`
+
+            <div class="panel-product">
+
+                <img src="${item.imagem}">
+
+                <div>
+
+                    <h4>${item.nome}</h4>
+
+                    <p>${item.preco}</p>
+
+                </div>
+
+                <button class="remove-item"
+
+                onclick="removerCarrinho('${item.id}')">
+
+                ✖
+
+                </button>
+
+            </div>
+
+            `;
+
+        });
+
+        cartTotal.textContent=
+        total.toLocaleString("pt-BR",{
+
+            style:"currency",
+
+            currency:"BRL"
+
+        });
+
+    }
+
+
+    //==============================
+    // REMOVER
+    //==============================
+
+    window.removerFavorito=function(id){
+
+        favoritos=favoritos.filter(p=>p.id!=id);
+
+        salvar();
+
+        renderFavoritos();
+
+        atualizarContadores();
+
+        atualizarIcones();
+
+    }
+
+    window.removerCarrinho=function(id){
+
+        carrinho=carrinho.filter(p=>p.id!=id);
+
+        salvar();
+
+        renderCarrinho();
+
+        atualizarContadores();
+
+        atualizarIcones();
+
+    }
+
+
+    //==============================
+    // ICONES
+    //==============================
+
+    function atualizarIcones(){
+
+        produtos.forEach(produto=>{
+
+            const id=produto.dataset.id;
+
+            const fav=produto.querySelector(".favorite-btn");
+
+            const cart=produto.querySelector(".cart-add-btn");
+
+            fav.classList.remove("active");
+
+            cart.classList.remove("active");
+
+            fav.innerHTML='<i class="fa-regular fa-heart"></i>';
+
+            cart.innerHTML='<i class="fa-solid fa-cart-plus"></i>';
+
+            if(favoritos.find(p=>p.id==id)){
+
+                fav.classList.add("active");
+
+                fav.innerHTML='<i class="fa-solid fa-heart"></i>';
+
+            }
+
+            if(carrinho.find(p=>p.id==id)){
+
+                cart.classList.add("active");
+
+                cart.innerHTML='<i class="fa-solid fa-check"></i>';
+
+            }
+
+        });
+
+    }
+
+
+    //==============================
+    // CLIQUES
+    //==============================
+
+    produtos.forEach(produto=>{
+
+        const fav=produto.querySelector(".favorite-btn");
+
+        const cart=produto.querySelector(".cart-add-btn");
+
+        const item={
+
+            id:produto.dataset.id,
+
+            nome:produto.querySelector("span").textContent,
+
+            preco:"R$ "+Number(produto.dataset.preco)
+            .toLocaleString("pt-BR",{
+                minimumFractionDigits:2
+            }),
+
+            valor:produto.dataset.preco,
+
+            imagem:produto.querySelector("img").src
+
+        };
+
+        fav.onclick=(e)=>{
+
+            e.preventDefault();
+            e.stopPropagation();
+
+            if(favoritos.find(p=>p.id==item.id)){
+
+                favoritos=favoritos.filter(p=>p.id!=item.id);
+
+            }else{
+
+                favoritos.push(item);
+
+            }
+
+            salvar();
+
+            atualizarContadores();
+
+            atualizarIcones();
+
+            renderFavoritos();
+
+        };
+
+        cart.onclick=(e)=>{
+
+            e.preventDefault();
+            e.stopPropagation();
+
+            if(carrinho.find(p=>p.id==item.id)){
+
+                carrinho=carrinho.filter(p=>p.id!=item.id);
+
+            }else{
+
+                carrinho.push(item);
+
+            }
+
+            salvar();
+
+            atualizarContadores();
+
+            atualizarIcones();
+
+            renderCarrinho();
+
+        };
+
+    });
+
+
+    //==============================
+    // PAINEIS
+    //==============================
+
+    favoriteBtn.onclick=()=>{
+
+        favoritePanel.classList.add("open");
+
+        overlay.classList.add("show");
+
+    }
+
+    cartBtn.onclick=()=>{
+
+        cartPanel.classList.add("open");
+
+        overlay.classList.add("show");
+
+    }
+
+    overlay.onclick=fechar;
+
+    document.querySelectorAll(".close-panel").forEach(btn=>{
+
+        btn.onclick=fechar;
+
+    });
+
+    function fechar(){
+
+        favoritePanel.classList.remove("open");
+
+        cartPanel.classList.remove("open");
+
+        overlay.classList.remove("show");
+
+    }
+
+
+    //==============================
+    // PESQUISA
+    //==============================
+
+    const input=document.getElementById("searchInput");
+
+    input.addEventListener("input",()=>{
+
+        const texto=input.value.toLowerCase();
+
+        produtos.forEach(produto=>{
+
+            const nome=produto.querySelector("span")
+            .textContent
+            .toLowerCase();
+
+            produto.style.display=
+            nome.includes(texto)
+            ? "flex"
+            : "none";
+
+        });
+
+    });
+
+
+    //==============================
+    // INICIAR
+    //==============================
+
+    atualizarContadores();
+
+    renderFavoritos();
+
+    renderCarrinho();
+
+    atualizarIcones();
+    </script>
+
+<script>
+    // ==========================
+    // Partículas reutilizáveis
+    // ==========================
+
+    function criarParticulas(quantidade = 80) {
+
+        for (let i = 0; i < quantidade; i++) {
+
+            const p = document.createElement("div");
+
+            p.className = "particle";
+
+            const tamanho = Math.random() * 5 + 2;
+
+            p.style.width = tamanho + "px";
+            p.style.height = tamanho + "px";
+
+            p.style.left = Math.random() * 100 + "vw";
+            p.style.top = Math.random() * 100 + "vh";
+
+            p.style.opacity = Math.random() * 0.35 + 0.05;
+
+            const cores = [
+                "#ffffff",
+                "#8ec5ff",
+                "#b0f5ff",
+                "#ffd6f5"
+            ];
+
+            p.style.background =
+                cores[Math.floor(Math.random() * cores.length)];
+
+            document.body.appendChild(p);
+
+            let velocidade = Math.random() * 0.4 + 0.1;
+
+            function animar() {
+
+                let y = parseFloat(p.style.top);
+
+                y -= velocidade;
+
+                if (y < -10) {
+                    y = 110;
+                    p.style.left = Math.random() * 100 + "vw";
+                }
+
+                p.style.top = y + "vh";
+
+                requestAnimationFrame(animar);
+
+            }
+
+            animar();
+
+        }
+
+    }
+
+    criarParticulas();
+</script>
+
+<script>
+    // ================================
+    // Efeito 3D Reutilizável
+    // Basta colocar class="tilt"
+    // ================================
+
+    document.querySelectorAll(".tilt").forEach(item=>{
+
+        item.addEventListener("mousemove",e=>{
+
+            const rect=item.getBoundingClientRect();
+
+            const x=e.clientX-rect.left;
+            const y=e.clientY-rect.top;
+
+            const rotateY=((x/rect.width)-0.5)*18;
+            const rotateX=(0.5-(y/rect.height))*18;
+
+            item.style.transform=
+            `
+            perspective(900px)
+            rotateX(${rotateX}deg)
+            rotateY(${rotateY}deg)
+            scale(1.04)
+            `;
+
+        });
+
+        item.addEventListener("mouseleave",()=>{
+
+            item.style.transform=
+            `
+            perspective(900px)
+            rotateX(0deg)
+            rotateY(0deg)
+            scale(1)
+            `;
+
+        });
+
+    });
+</script>
+
+    <script>
+    // ===============================
+    // SPARKLES
+    // ===============================
+
+    document.addEventListener("mousemove",e=>{
+
+        if(Math.random()>0.35)return;
+
+        const star=document.createElement("div");
+
+        star.className="sparkle";
+
+        star.style.left=e.clientX+"px";
+        star.style.top=e.clientY+"px";
+
+        const cores=[
+            "#ffffff",
+            "#00ffff",
+            "#ff4ecb",
+            "#7df9ff",
+            "#ffe066"
+        ];
+
+        star.style.background=
+            cores[Math.floor(Math.random()*cores.length)];
+
+        star.style.boxShadow=
+        `0 0 10px ${star.style.background},
+        0 0 20px ${star.style.background}`;
+
+        document.body.appendChild(star);
+
+        setTimeout(()=>{
+
+            star.remove();
+
+        },800);
+
+    });
+    </script>
+
+
+
+</body>
+</html>
